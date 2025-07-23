@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/employee</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">mahi</property>
+
+        <!-- Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Show SQL in console -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Mapping class -->
+        <mapping class="com.kodnest.permenat_datastore_project.Employee" />
+
+    </session-factory>
+</hibernate-configuration>
